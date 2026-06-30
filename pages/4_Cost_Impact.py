@@ -16,8 +16,9 @@ st.markdown("Calculate the financial impact of downtime and the ROI of predictiv
 
 @st.cache_data
 def load_data():
-    oee_df = pd.read_csv('oee_data.csv')
-    maintenance_df = pd.read_csv('ai4i2020.csv')
+    DATA_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))    
+    oee_df = pd.read_csv(os.path.join(DATA_DIR, 'oee_data.csv'))
+    maintenance_df = pd.read_csv(os.path.join(DATA_DIR, 'ai4i2020.csv'))
     return oee_df, maintenance_df
 
 oee_df, maintenance_df = load_data()
