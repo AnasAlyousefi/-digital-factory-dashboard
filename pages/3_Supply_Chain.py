@@ -17,7 +17,8 @@ st.markdown("---")
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv('supply_chain_data.csv')
+    DATA_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    df = pd.read_csv(os.path.join(DATA_DIR, 'supply_chain_data.csv'))
     df['date'] = pd.to_datetime(df['date'])
     return df
 
