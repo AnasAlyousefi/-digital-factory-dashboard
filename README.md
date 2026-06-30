@@ -57,8 +57,7 @@ streamlit run Home.py
 
 ## Live Demo
 
-[Add your Streamlit Cloud link here once deployed]
-
+[Try the live app here](https://jjfdjihezmdwwzjrbtzqi2.streamlit.app/)
 ## Author
 
 Built by Anas Alyousefi as part of a Data & Process Engineering portfolio, combining Lean Six Sigma / Industrial Engineering domain knowledge with applied data analytics and machine learning.
