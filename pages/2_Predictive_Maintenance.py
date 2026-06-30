@@ -18,7 +18,8 @@ st.markdown("---")
 
 @st.cache_data
 def load_and_train():
-    df = pd.read_csv('ai4i2020.csv')
+    DATA_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    df = pd.read_csv(os.path.join(DATA_DIR, 'ai4i2020.csv'))
 
     le = LabelEncoder()
     df['Type_encoded'] = le.fit_transform(df['Type'])
